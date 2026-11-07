@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Tao Limited</title>
+    <!-- Web fonts: one non-blocking-chain request instead of four serial @imports from main.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link media="all" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Just+Another+Hand|Poppins:300,400,500,600,700&display=swap">
     <!-- Font Icons -->
     <link media="all" rel="stylesheet" href="css/fonts/icomoon/icomoon.css">
 <!--     <link media="all" rel="stylesheet" href="css/fonts/roxine-font-icon/roxine-font.css"> -->
@@ -26,8 +30,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/rev-slider/revolution/css/navigation.css">
     <!-- Theme CSS -->
     <link media="all" rel="stylesheet" href="css/main.css">
-    <!-- Custom CSS -->
-    <link media="all" rel="stylesheet" href="css/custom.css">
+    <!-- Reserve the full-screen slider height before the slider script runs, so the page below it does not jump when the slider appears -->
+    <style>.banner-home{min-height:100vh;min-height:100svh}</style>
 </head>
 
 <body class="white-overlay">
@@ -164,7 +168,7 @@
                             <ul>
                                 <li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                                     <!-- main image for revolution slider -->
-                                    <img src="img/1920/corporate.jpg" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
+                                    <img fetchpriority="high" src="img/1920/corporate.webp" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
                                     <div class="tp-caption tp-shape tp-shapewrapper" id="slide-1699-layer-10" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
                                     data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:0;sX:1;sY:1;opacity:0;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="background-color:rgba(0, 0, 0, 0.57);"> </div>
@@ -194,7 +198,7 @@
                                 <h3 class="block-top-heading">THE FOCUS OF</h3>
                                 <h2 class="block-main-heading">OUR INDUSTRIES</h2>
                                 <span class="block-sub-heading">We choose sectors which encourage sustainable development for mankind.</span>
-                                <div class="divider"><img src="img/divider.png" alt="images description"></div>
+                                <div class="divider"><img width="70" height="3" src="img/divider.png" alt="images description"></div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
@@ -275,7 +279,7 @@
                         <div class="row grid">
                             <div class="gallery-item col-lg-4 col-md-6 ui photography">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/meeting.jpg" alt="images description">
+                                    <img src="img/800/meeting.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taomgt.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Mgt</h2>                                             
@@ -292,7 +296,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 photography programming">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/gavel.jpg" alt="images description">
+                                    <img src="img/800/gavel.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taolegalgroup.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Legal Group</h2>                                             
@@ -309,7 +313,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 ui photography">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/bitcoin.jpg" alt="images description">
+                                    <img src="img/800/bitcoin.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taofinances.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Finances</h2>                                             
@@ -326,7 +330,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 ecommerce programming">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/containers.jpg" alt="images description">
+                                    <img src="img/800/containers.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taologistics.net" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Logistics</h2>                                             
@@ -343,7 +347,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 programming ecommerce">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/package.jpg" alt="images description">
+                                    <img src="img/800/package.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taogoods.co" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Goods</h2>                                             
@@ -360,7 +364,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 ecommerce ui">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/architecture.jpg" alt="images description">
+                                    <img src="img/800/architecture.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taoprecision.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Precision</h2>                                             
@@ -377,7 +381,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 ui photography">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/author.jpg" alt="images description">
+                                    <img src="img/800/author.webp" alt="images description" width="804" height="531" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taopublishinghouse.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Publishing</h2>                                             
@@ -394,7 +398,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 photography programming">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/retail.jpg" alt="images description">
+                                    <img src="img/800/retail.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taomedia.org" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Media</h2>                                             
@@ -411,7 +415,7 @@
                             </div>
                             <div class="gallery-item col-lg-4 col-md-6 ui photography">
                                 <figure class="picture-item img-block shine-effect image-zoom port-v2">
-                                    <img src="img/800/programming.jpg" alt="images description">
+                                    <img src="img/800/programming.webp" alt="images description" width="800" height="533" loading="lazy" decoding="async">
                                     <figcaption><a href="https://taoninja.com" target="_blank">
                                         <div class="link-box">                                             
                                             <h2 class="text-white">Tao Ninja</h2>                                             
@@ -437,7 +441,7 @@
                                             <h3 class="block-top-heading">RECENT NEWS</h3>
                                             <h2 class="block-main-heading">TAO HEADLINES</h2>
                                             <span class="block-sub-heading">We make a difference.</span>
-                                            <div class="divider"><img src="img/divider.png" alt="images description"></div>
+                                            <div class="divider"><img width="70" height="3" src="img/divider.png" alt="images description"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -445,7 +449,7 @@
                                     <div class="col-wrap">
                                         <div class="post-grid">
                                             <div class="img-block">
-                                                <img src="img/800/child_write.jpg" alt="images">
+                                                <img src="img/800/child_write.webp" alt="images" width="800" height="533" loading="lazy" decoding="async">
                                             </div>
                                             <div class="post-text-block bg-gray-light">
                                                 <strong class="content-title mb-0">Ignite Curiosity</strong>
@@ -470,7 +474,7 @@
                                     <div class="col-wrap">
                                         <div class="post-grid">
                                             <div class="img-block">
-                                                <img src="img/800/internpresent.jpg" alt="images">
+                                                <img src="img/800/internpresent.webp" alt="images" width="800" height="533" loading="lazy" decoding="async">
                                             </div>
                                             <div class="post-text-block bg-gray-light">
                                                 <strong class="content-title mb-0">The Focus Hive Launches</strong>
@@ -495,7 +499,7 @@
                                     <div class="col-wrap">
                                         <div class="post-grid">
                                             <div class="img-block">
-                                                <img src="img/800/aerospace.jpg" alt="images">
+                                                <img src="img/800/aerospace.webp" alt="images" width="800" height="534" loading="lazy" decoding="async">
                                             </div>
                                             <div class="post-text-block bg-gray-light">
                                                 <strong class="content-title mb-0">Aerospace Initiative</strong>
@@ -520,7 +524,7 @@
                                     <div class="col-wrap">
                                         <div class="post-grid">
                                             <div class="img-block">
-                                                <img src="img/800/microsoft.jpg" alt="images">
+                                                <img src="img/800/microsoft.webp" alt="images" width="800" height="533" loading="lazy" decoding="async">
                                             </div>
                                             <div class="post-text-block bg-gray-light">
                                                 <strong class="content-title mb-0">Microsoft Partnership</strong>
@@ -545,7 +549,7 @@
                                     <div class="col-wrap">
                                         <div class="post-grid">
                                             <div class="img-block">
-                                                <img src="img/800/educatelegs.jpg" alt="images">
+                                                <img src="img/800/educatelegs.webp" alt="images" width="800" height="533" loading="lazy" decoding="async">
                                             </div>
                                             <div class="post-text-block bg-gray-light">
                                                 <strong class="content-title mb-0">Tao Learning Opens</strong>
@@ -571,14 +575,14 @@
                     </section>
                     <section id="work-section" class="content-block work-block">
                         <div class="bg-stretch">
-                            <img src="img/big-01.jpg" alt="">
+                            <img src="img/big-01.webp" alt="" loading="lazy" decoding="async">
                         </div>
                         <div class="container">
                             <div class="block-heading bottom-space text-center">
                                 <h3 class="block-top-heading">TAO LIMITED</h3>
                                 <h2 class="block-main-heading">WORK CULTURE</h2>
                                 <span class="block-sub-heading">An open approach to a vibrant &amp; international workforce.</span>
-                                <div class="divider"><img src="img/divider.png" alt="images description"></div>
+                                <div class="divider"><img width="70" height="3" src="img/divider.png" alt="images description"></div>
                             </div>
                             <div class="description text-center container-md">
                                 <p>We're quite unique in creating workplace trends decades before the industry picks them up. For over 25 years, our employees have always worked from home, used DevOps practices, been sustainable and mindful of their environments, while being encouraged to embrace the flow of Tao and take up Yoga.
@@ -591,34 +595,34 @@
                             <div class="logo-container">
                                 <div class="owl-carousel logo-slide" id="waituk-owl-slide-4">
                                     <div class="slide-item">
-                                        <img src="icons/partners/adobe-logo.png" alt="images description">
+                                        <img src="icons/partners/adobe-logo.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/google-logo.jpg" alt="images description">
+                                        <img src="icons/partners/google-logo.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/microsoft-logo.png" alt="images description">
+                                        <img src="icons/partners/microsoft-logo.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/logo_sap.png" alt="images description">
+                                        <img src="icons/partners/logo_sap.webp" alt="images description" width="200" height="124" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/unreal.png" alt="images description">
+                                        <img src="icons/partners/unreal.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/resolve.png" alt="images description">
+                                        <img src="icons/partners/resolve.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/taomgt.png" alt="images description">
+                                        <img src="icons/partners/taomgt.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/dynamics-365.png" alt="images description">
+                                        <img src="icons/partners/dynamics-365.webp" alt="images description" width="200" height="126" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/o365.png" alt="images description">
+                                        <img src="icons/partners/o365.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                     <div class="slide-item">
-                                        <img src="icons/partners/salesforce.png" alt="images description">
+                                        <img src="icons/partners/salesforce.webp" alt="images description" width="200" height="125" loading="lazy" decoding="async">
                                     </div>
                                 </div>
                             </div>
@@ -681,7 +685,6 @@
         </div>
     </div>
     <a href="#" class="section-scroll" id="scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[11]='MMERGE11';ftypes[11]='text';fnames[12]='MMERGE12';ftypes[12]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <!-- jQuery Library -->
     <script src="vendors/jquery/jquery-2.1.4.min.js"></script>
     <!-- Vendor Scripts -->
